@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Search = () =>{
+const Search = ({onSearch}) =>{
     return(
-        <input type="search" placeholder="Who you lookin' for?"/>
+        <input type="search" placeholder="Who you lookin' for?" onChange={onSearch}/>
     )
 }
 
