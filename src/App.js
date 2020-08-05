@@ -23,7 +23,7 @@ class App extends React.Component{
     
     return(
       <div>
-        <h1>Friend-A-Dex</h1>
+        <h1 className="tc f1">Friend-A-Dex</h1>
         <CardList userList={this.state.userList}/>
       </div>
     )

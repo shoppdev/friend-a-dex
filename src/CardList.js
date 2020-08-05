@@ -12,7 +12,6 @@ const CardList = ({userList}) =>{
             }
         </div>
     )
-
 }
 
 export default CardList
