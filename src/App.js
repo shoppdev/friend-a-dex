@@ -20,11 +20,11 @@ class App extends React.Component{
   }
 
   render(){
-    console.log(this.state.userList)
+    
     return(
       <div>
         <h1>Friend-A-Dex</h1>
-        <CardList />
+        <CardList userList={this.state.userList}/>
       </div>
     )
   }

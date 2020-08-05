@@ -1,10 +1,18 @@
 import React from 'react'
 import Card from './Card'
 
-const CardList = () =>{
+const CardList = ({userList}) =>{
+    
     return(
-        <Card />
+        <div>
+            {
+                userList.map((user, i) =>{
+                    return <Card key={i} user={user}/>
+                })
+            }
+        </div>
     )
+
 }
 
 export default CardList
