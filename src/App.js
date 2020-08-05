@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import CardList from './CardList'
+import Search from './Search'
 
 class App extends React.Component{
 
@@ -22,8 +23,9 @@ class App extends React.Component{
   render(){
     
     return(
-      <div>
-        <h1 className="tc f1">Friend-A-Dex</h1>
+      <div className="tc">
+        <h1 className="f1">Friend-A-Dex</h1>
+        <Search />
         <CardList userList={this.state.userList}/>
       </div>
     )
